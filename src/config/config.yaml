@@ -1,0 +1,46 @@
+features:
+  target: converted
+
+  drop:
+    - prospect_id
+    - lead_number
+    - magazine
+    - receive_more_updates_about_our_courses
+    - i_agree_to_pay_the_amount_through_cheque
+    - update_me_on_supply_chain_content
+    - get_updates_on_dm_content
+
+  numeric:
+    - totalvisits
+    - total_time_spent_on_website
+    - page_views_per_visit
+    - asymmetrique_activity_score
+    - asymmetrique_profile_score
+
+  categorical:
+    - lead_origin
+    - lead_source
+    - last_activity
+    - country
+    - specialization
+    - tags
+    - lead_quality
+    - lead_profile
+    - city
+    - how_did_you_hear_about_x_education
+    - what_is_your_current_occupation
+    - what_matters_most_to_you_in_choosing_a_course
+    - asymmetrique_activity_index
+    - asymmetrique_profile_index
+    - last_notable_activity
+
+  binary:
+    - do_not_email
+    - do_not_call
+    - search
+    - newspaper
+    - newspaper_article
+    - x_education_forums
+    - digital_advertisement
+    - through_recommendations
+    - a_free_copy_of_mastering_the_interview

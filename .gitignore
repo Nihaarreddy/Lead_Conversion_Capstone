@@ -1,0 +1,28 @@
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+.venv/
+evidently-env/
+
+# IDE settings
+.idea/
+
+# MLflow tracking files
+mlruns/
+
+# Environment files
+.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
