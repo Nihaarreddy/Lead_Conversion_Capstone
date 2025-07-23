@@ -1,0 +1,35 @@
+# Base image with Python 3.11 - slim version to keep image size small
+FROM python:3.10
+
+# Set environment variables
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+
+# Set working directory inside the container
+WORKDIR /app
+
+# Install system-level dependencies for scientific Python libraries
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    gcc \
+    git \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy project files
+COPY . .
+
+# Copy custom requirements file (create one with pip freeze)
+COPY requirements.txt .
+
+# Upgrade pip and install Python dependencies
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
+
+# Expose ports for MLflow (5000) and Jupyter (8888)
+EXPOSE 5000
+EXPOSE 8888
+
+# Set default command (customizable):
+# You can override this in docker run by passing your own command.
+CMD ["mlflow", "ui", "--host", "0.0.0.0", "--port", "5000"]
