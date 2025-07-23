@@ -26,6 +26,8 @@ This repository contains an end-to-end machine learning pipeline to **predict wh
 
 ## 📂 Repository Structure
 
+<img width="959" height="792" alt="Screenshot 2025-07-22 102245" src="https://github.com/user-attachments/assets/ba183196-700f-4d3f-9db2-83bab1d08663" />
+
 📦lead-conversion-prediction
 ┣ config/
 ┃ ┗ config.yaml
@@ -60,6 +62,7 @@ This repository contains an end-to-end machine learning pipeline to **predict wh
 ┣ requirements.txt
 ┣ README.md
 ┗ LICENSE
+
 
 
 ---
@@ -101,10 +104,12 @@ python src/pipeline.py --train
 python src/app/flask_app.py
 
 
-- Access UI at `http://localhost:8000`  
-- **Screenshot placeholders:**  
-  ![Flask web scoring form](screenshots/flask_form.png)  
-  ![Batch upload prediction](screenshots/batch_upload.png)
+- Access UI at `http://localhost:8000 
+
+<img width="1919" height="1005" alt="Screenshot 2025-07-21 182850" src="https://github.com/user-attachments/assets/56cbf141-ed7c-47b1-8d73-5d45e5df1cc0" />
+
+
+<img width="1917" height="949" alt="Screenshot 2025-07-21 182903" src="https://github.com/user-attachments/assets/53f5f329-1c4a-4fc9-9aa9-3d83aa83592c" />
 
 ---
 
@@ -138,7 +143,10 @@ python src/app/flask_app.py
 
 - **MLflow:** All runs and models logged/tracked for reproducibility
 - **Evidently AI:** Regular drift detection with HTML reports, see sample:  
-  ![Data drift detection](screenshots/drift_detect.png)
+
+<img width="1918" height="959" alt="Screenshot 2025-07-21 182932" src="https://github.com/user-attachments/assets/61a561b4-88ed-4199-941d-0fe498522925" />
+
+
 - **Flask UI:**  
     - **Single Lead Scoring:** Real-time form input
     - **Batch Scoring:** CSV file upload for bulk predictions
@@ -166,9 +174,10 @@ python src/app/flask_app.py
 ## 📸 Screenshots
 
 <!-- Add screenshots here -->
-![Flask UI](screenshots/flask_form.png)
-![Batch Predictions](screenshots/batch_upload.png)
-![Drift Report](screenshots/drift_detect.png)
+<img width="1914" height="950" alt="All_Models_Params_Metrics" src="https://github.com/user-attachments/assets/eaab4eab-8f4b-4f03-8d6d-9b5e43660f8c" />
+
+
+<img width="1882" height="594" alt="MLFlow-Registered-Models" src="https://github.com/user-attachments/assets/6f78700f-6e3d-41b4-b3a4-7440267eb730" />
 
 ---
 
@@ -178,6 +187,3 @@ Open to suggestions, improvements, bug fixes, and collaboration! Please open an 
 
 ---
 
-## 📄 License
-
-MIT License (see [LICENSE](LICENSE))
