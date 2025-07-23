@@ -71,8 +71,8 @@ This repository contains an end-to-end machine learning pipeline to **predict wh
 
 ### 1. Clone the repository
 
-git clone https://github.com/Nihaarreddy/lead-conversion-ml.git
-cd lead-conversion-ml
+git clone https://github.com/Nihaarreddy/Lead_Conversion_Capstone.git
+cd Lead_Conversion_Capstone
 
 
 ### 2. Install dependencies
@@ -91,7 +91,7 @@ pip install -r requirements.txt
 Use the included Jupyter notebooks or scripts in `src/`:
 
 python src/preprocessing/data_cleaning.py
-python src/preprocessing/modeling.py
+python src/preprocessing/pipelines.py
 
 
 
